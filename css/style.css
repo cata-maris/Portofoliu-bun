@@ -269,10 +269,10 @@ landing projects
   justify-content: center;
   background: url("/images/vecteezy_dark-perspective-hexagon-background_11884207.jpg")
     no-repeat center/cover;
+  padding: 100px 50px;
 }
 .slider-wrapper {
   overflow: hidden;
-  padding: 100px 0px;
 }
 .card-list .card-item {
   height: auto;
