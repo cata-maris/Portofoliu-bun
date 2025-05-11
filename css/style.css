@@ -47,6 +47,10 @@ body {
   z-index: 100;
   transition: background 0.4s ease-in-out;
 }
+.navbar.scroll {
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(7px);
+}
 
 .navbar ul {
   display: flex;
@@ -213,7 +217,7 @@ nav img {
 .landing-info-intro {
   display: flex;
   flex-direction: column;
-  align-items: self-start;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -458,36 +462,96 @@ landing projects
   .welcome-text {
     flex: 1;
   }
-  .container.swiper {
-    padding: 0 40px;
+}
+@media (max-width: 966px) and (min-width: 715px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
   }
-  .slider-wrapper .swiper-slide-button {
-    color: #fff;
-    margin-top: -55px;
-    transition: 0.2s ease;
+}
+@media (max-width: 966px) {
+  #footer-section {
+    padding: 50px 50px;
+  }
+  .landing-info-container {
+    width: 100%;
+    padding: 50px;
+  }
+  .footer-info {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+  }
+
+  .navbar ul {
+    gap: 2rem;
+    border-top: 2px solid #333;
+    margin-top: 1rem;
+    padding: 10px;
+    width: 90%;
+  }
+  .welcome-box {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin-bottom: 40px;
+  }
+  #welcome a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  #welcome img {
+    width: 100%;
+  }
+  .welcome-text {
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+@media (max-width: 888px) {
+  #footer-section {
+    padding: 40px 20px;
+  }
+  .footer-info {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .footer-services {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  .footer-info div {
+    gap: 1rem;
+  }
+  .footer-info h2 {
+    margin: 0;
+  }
+  .navbar ul {
+    gap: 0.2rem;
+  }
+  .welcome-box {
+    margin-bottom: 60px;
   }
 }
 
-@media (min-width: 600px) {
-  .navbar.scroll {
-    background-color: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(7px);
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 715px) {
   .navbar {
     flex-direction: column;
     gap: 15px;
     text-align: center;
     padding: 0 0 0 0;
-    height: 5px;
+    height: 90px;
   }
   .navbar ul {
     padding: 45px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(650px);
+    transform: translateX(800px);
     gap: 2.4rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
@@ -513,11 +577,41 @@ landing projects
   .logo {
     align-self: start;
     margin-left: 1.2rem;
-    background: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(5px);
     width: 100%;
     padding: 20px;
     margin: 0;
+  }
+  .welcome-box {
+    margin: 0;
+    gap: 1.3rem;
+  }
+  #welcome {
+    height: 100vh;
+  }
+
+  .card-list .card-item {
+    padding: 10px 20px 10px 20px;
+  }
+  .container.swiper {
+    height: auto;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  .landing-info-container {
+    flex-direction: column;
+  }
+  .landing-info-intro {
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+  }
+  .landing-info-intro h1 {
+    font-size: 1.8rem;
+    margin-top: -0.5rem;
+  }
+  .landing-info-intro h3 {
+    font-size: 1.1rem;
+    font-weight: 300;
   }
 }
 @media (max-width: 768px) {
@@ -525,6 +619,9 @@ landing projects
     margin: 0 10px 40px;
   }
   .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+  .slider-wrapper .swiper-pagination-bullet {
     display: none;
   }
 }
