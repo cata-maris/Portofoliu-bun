@@ -198,8 +198,39 @@ nav img {
   margin-right: 0.3rem;
 }
 /*  */
-/* 
- */
+/* section about */
+/*  */
+#landing-about {
+  display: flex;
+  background: #222;
+  color: #f4f4f4;
+  height: 100vh;
+  border-bottom: 2px solid #333;
+}
+.landing-about-image {
+  background: url(/images/eufundal.jpg) center/cover;
+  flex: 1;
+}
+.landing-about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0px 100px;
+  align-self: center;
+}
+.landing-about-text a {
+  border-radius: 5px;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 50%;
+}
+.landing-about-text p {
+  color: #d4d4d4;
+}
+/*  */
+
 /* section intro */
 #landing-info {
   background: #222;
@@ -462,6 +493,12 @@ landing projects
   .welcome-text {
     flex: 1;
   }
+  .landing-about-text {
+    padding: 0px 20px 0px 50px;
+  }
+  .landing-about-text a {
+    width: 60%;
+  }
 }
 @media (max-width: 966px) and (min-width: 715px) {
   .navbar {
@@ -535,6 +572,39 @@ landing projects
   }
   .welcome-box {
     margin-bottom: 60px;
+  }
+  #landing-about {
+    flex-direction: column;
+    height: 130vh;
+    padding: 30px 20px 30px 20px;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    gap: 2rem;
+  }
+  .landing-about-text {
+    padding: 0 50px;
+  }
+  .landing-about-text a {
+    width: 70%;
+    align-self: center;
+  }
+  .landing-about-image {
+    background: url(/images/inlocuitor.jpg) center/cover;
+    flex: 2;
+    width: 100%;
+  }
+  .landing-about-image p {
+    padding-bottom: 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: end;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    font-size: 10px;
   }
 }
 
@@ -706,6 +776,12 @@ landing projects
     margin: 0;
     font-size: 0.9rem;
   }
+  .landing-about-text a {
+    width: 90%;
+  }
+  .landing-about-text {
+    padding: 0px 10px;
+  }
 }
 @media (max-width: 768px) {
   .slider-wrapper {
@@ -719,5 +795,98 @@ landing projects
   }
   .swiper-pagination {
     display: none;
+  }
+}
+@media (min-width: 1700px) {
+  #welcome img {
+    width: 90%;
+  }
+  #welcome h1 {
+    font-size: 4rem;
+  }
+  #welcome p {
+    font-size: 1.9rem;
+    color: var(--btn-color);
+  }
+  #welcome a {
+    font-size: 1.6rem;
+  }
+  .navbar ul li a {
+    font-size: 1.7rem;
+  }
+  .logo {
+    font-size: 1.8rem;
+  }
+  .landing-about-text p {
+    font-size: 1.5rem;
+  }
+  .landing-about-text a {
+    font-size: 1.5rem;
+  }
+  .landing-about-text h1 {
+    font-size: 2rem;
+  }
+  .landing-info-intro h1 {
+    font-size: 3rem;
+  }
+  .landing-info-intro h3 {
+    font-size: 2.1rem;
+    font-weight: 300;
+  }
+  .landing-info-intro p {
+    font-size: 1.5rem;
+  }
+  .landing-info-intro a {
+    font-size: 1.3rem;
+  }
+  .landing-info-box h3 {
+    font-size: 1.8rem;
+  }
+  .landing-info-box p {
+    font-size: 1.3rem;
+  }
+  .landing-info-box i {
+    font-size: 3rem;
+  }
+  .card-list .card-item h3 {
+    font-size: 1.5rem;
+  }
+  .footer-info h2 {
+    font-size: 2rem;
+  }
+  .footer-info p {
+    color: #d3d3d3;
+    font-size: 1.4rem;
+  }
+  .footer-about a {
+    font-size: 1.6rem;
+  }
+  #footer-section img {
+    width: 65px;
+  }
+  #footer-section .logo {
+    font-size: 1.7rem;
+  }
+  .social-media i {
+    font-size: 2rem;
+    padding: 30px;
+  }
+  .footer-services ul a {
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 1.4rem;
+  }
+  .footer-location h3 {
+    font-size: 1.4rem;
+    color: #d4d4d4;
+  }
+  .footer-news .footer-inputs input:nth-child(2) {
+    font-size: 1.7rem;
+  }
+  .footer-news .footer-inputs input {
+    font-size: 1.5rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
   }
 }

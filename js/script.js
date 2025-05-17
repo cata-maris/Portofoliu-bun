@@ -43,6 +43,9 @@ const swiper = new Swiper(".slider-wrapper", {
     1200: {
       slidesPerView: 2,
     },
+    1700: {
+      slidesPerView: 3,
+    },
   },
 });
 const cardItem = document.querySelector(".card-item");
