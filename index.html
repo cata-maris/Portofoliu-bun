@@ -17,12 +17,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="loader-box">
+      <div id="loader"></div>
+
+    </div>
     <nav class="navbar">
     
       <a class="logo scroll" href=""><img src="./images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png">MRS WEB STUDIO</a>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="details.html">Despre noi</a></li>
+        <li><a href="despre.html">Despre noi</a></li>
         <li><a href="contact.html">Servicii</a></li>
         <li><a href="contact.html">Contact</a></li>
 
@@ -50,7 +54,7 @@
             <a class="basic-btn" href="contact.html">Servicii</a>
           </div>
         </div>
-        <img src="./images/welcome-image.png" >
+        <img src="./images/welcome-image.png" loading="lazy" >
       </div>
     </section>
 
@@ -63,6 +67,24 @@
       <div class="landing-about-image">
         <p>Nu suntem noi cei din poză 	&#128513;</p>
       </div>
+    </section>
+
+    <section id="experience">
+      <div class="experience-container">
+
+      <div class="scroll-indicator">
+        <div class="scroll-bar"></div>
+      </div>
+       <div class="experience-box">
+      <div class="reveal"><h2>1</h2> <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto, totam ad, itaque ipsa, placeat dolorem atque nulla repellat unde ducimus. Quibusdam, aut obcaecati placeat consequuntur reprehenderit, ut, accusamus autem reiciendis quis quod neque necessitatibus!</p></div>
+      <div class="reveal"><h2>1</h2> <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto, totam ad, itaque ipsa, placeat dolorem atque nulla repellat unde ducimus. Quibusdam, aut obcaecati placeat consequuntur reprehenderit, ut, accusamus autem reiciendis quis quod neque necessitatibus!</p></div>
+      <div class="reveal"><h2>1</h2> <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto, totam ad, itaque ipsa, placeat dolorem atque nulla repellat unde ducimus. Quibusdam, aut obcaecati placeat consequuntur reprehenderit, ut, accusamus autem reiciendis quis quod neque necessitatibus!</p></div>
+      <div class="reveal"><h2>1</h2> <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto, totam ad, itaque ipsa, placeat dolorem atque nulla repellat unde ducimus. Quibusdam, aut obcaecati placeat consequuntur reprehenderit, ut, accusamus autem reiciendis quis quod neque necessitatibus!</p></div>
+      <div class="reveal"><h2>1</h2> <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur architecto, totam ad, itaque ipsa, placeat dolorem atque nulla repellat unde ducimus. Quibusdam, aut obcaecati placeat consequuntur reprehenderit, ut, accusamus autem reiciendis quis quod neque necessitatibus!</p></div>
+      
+    </div>
+    
+        </div>
     </section>
     <section id="landing-info">
       <div class="landing-info-container">
@@ -103,7 +125,11 @@
 
       <div class="card-item swiper-slide">
         <img src="/images/gallery1.JPG" alt="Proiect Imobiliar">
-       <h3>SIte-uri de promovare</h3>
+       <h3>Site-uri de promovare</h3>
+      </div>
+       <div class="card-item swiper-slide">
+        <img src="/images/gallery4.JPG" alt="Design Magazin Online">
+        <h3 class="overlay">Atestate profesionale la informatică</h3>
       </div>
       <div class="card-item swiper-slide">
         <img src="/images/gallery2.JPG" alt="Portofoliu Foto">
@@ -113,10 +139,7 @@
         <img src="/images/gallery3.png" alt="Rezervare Restaurant">
         <h3 class="overlay">Design-uri compatibile cu orice device</h3>
       </div>
-      <div class="card-item swiper-slide">
-        <img src="/images/gallery4.JPG" alt="Design Magazin Online">
-        <h3 class="overlay">Atestate profesionale cu documentație inclusă</h3>
-      </div>
+     
       <div class="card-item swiper-slide">
         <img src="/images/gallery5.JPG" alt="Landing Page Aplicatie">
         <h3 class="overlay">Editare și colaje foto</h3>
@@ -131,6 +154,37 @@
       <div class="swiper-slide-button swiper-button-next"></div>
     </div>
   </section>
+<section id="contact">
+  <div class="contact-form">
+    <h2><i class="fa-solid fa-envelope"></i> Contactează-ne </h2>
+    <h4>Completează formularul de mai jos și intră în legătură cu echipa noastră. </h4>
+    <form name="contact-form" method="POST" data-netlify="true">
+      <div class="form-grup">
+        <label for="name">Nume</label>
+        <input type="text" name="name" id="name" placeholder="Introduceți numele">
+      </div>
+      <div class="form-grup">
+        <label for="name">Prenume</label>
+        <input type="text" name="name" id="name" placeholder="Introduceți prenumele">
+      </div>
+       <div class="form-grup">
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email" placeholder=" Introduceți Email-ul">
+       </div>
+       <div class="form-grup">
+        <label for="phone">Număr de telefon</label>
+        <input type="tel" id="phone" name="phone" placeholder="Ex: +40774610524">
+       </div>
+       <div class="form-grup">
+        <label for="message">Mesajul tău</label>
+        <textarea id="message" name="message" rows="5">
+</textarea>
+       </div>
+         <input class="basic-btn" type="submit" value="Trimite" class="btn-submit">
+    </form>
+  </div>
+</section>
+
 
 
    <section id="footer-section">

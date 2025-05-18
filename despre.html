@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mrs Portofolio | Website building</title>
+    <link rel=" icon" href="/images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/despre.css">
+  </head>
+  <body>
+    <div class="loader-box">
+      <div id="loader"></div>
+
+    </div>
+    <nav class="navbar">
+    
+      <a class="logo scroll" href=""><img src="./images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png">MRS WEB STUDIO</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li><a href="contact.html">Servicii</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <div class="social">
+
+          <a href="contact.html"> <i class="fa-brands fa-instagram"></i></a>
+          
+          <a href="contact.html"><i class="fa-brands fa-facebook"></i></a>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="span-1"> </span>
+        <span class="span-2"></span>
+        <span class="span-3"> </span>
+      </div>
+    </nav>
+    <section id="despre-welcome">
+      <div class="despre-welcome-box"><h1>DESPRE NOI</h1>
+    <div class="animated-bar">
+      <div class="moving-bar"></div>
+</div>
+</div>
+    </section>
+<section id="footer-section">
+    <div class="social-media">
+      <a class="logo" href=""><img src="./images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png">MRS WEB STUDIO</a>
+      <div class="social-icons">
+       <a href=""> <i class="fa-brands fa-facebook"></i></a>
+       <a href=""> <i class="fa-brands fa-square-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-youtube"></i></a>
+       <a href=""> <i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="footer-about">
+        <h2>DESPRE NOI</h2>
+        <p>Suntem o intreprindere creată din pasiunea pentru web design, creată în 2025, cu scopul de a valorifica experiența dobândită de-a lungul anilor prin realizarea de proiecte diverse. </p>
+        <a href="detalii.html">Află mai multe &rarr;</a>
+      </div>
+<div class="footer-services">
+ <h2>PORTOFOLIU</h2> 
+ <ul>
+  <li><a href="">Proiecte</a></li>
+  <li><a href="">Atestate</a></li>
+  <li><a href="">Web Design</a></li>
+  <li><a href="">Contact</a></li>
+ </ul>
+</div>
+
+<div class="footer-location">
+  <h2>DATE DE CONTACT</h2>
+  <h3>TELEFON: 0774610524</h3>
+  <h3>EMAIL: cata.work75@gmail.com</h3>
+  <h3>Competențe: HTML, CSS, JavaScript</h3>
+</div>
+<div class="footer-news">
+  <h2>RĂMÂI LA CURENT</h2>
+  <p>Aboneaza-te pentru a primi oferte și reduceri la programele noastre</p>
+  <label for="email">Email</label>
+  <div class="footer-inputs">
+    <input type="email">
+    <input type="submit" value="&uparrow;" class="footer-btn">
+  </div>
+</div>
+    </div>
+
+  <div class="copyright">
+    <p>Copyright 	&#169; 2025 | Drepturile de autor sunt rezervate creatorului acestui site, Mariș Marius Cătălin</p>
+  </div>
+</section>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/21cc80cb87.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const menuList = document.querySelector(".navbar ul");
+const navbar = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", () => {
+  menuList.classList.toggle("on");
+  hamburger.classList.toggle("change");
+});
+//  navbar blur
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    navbar.classList.add("scroll");
+  } else {
+    navbar.classList.remove("scroll");
+  }
+});
+
+// loader
+function showPage() {
+  document.querySelector(".loader-box").style.transform = "translateY(-100%)";
+}
+
+function loaderTimeout() {
+  setTimeout(showPage, 2000);
+}
+
+window.addEventListener("load", loaderTimeout);
+
+console.log("Scriptul a fost încărcat!");
+
+    </script>
+  </body>
+</html>
