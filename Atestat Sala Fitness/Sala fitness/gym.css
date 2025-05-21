@@ -1,0 +1,460 @@
+:root{
+  --primary-color:#C71515;
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+html{
+  scroll-behavior: smooth;
+  width:100%;
+}
+a {
+  text-decoration: none;
+}
+body{
+  line-height: 1.3;
+  font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
+  z-index:5;
+}
+/* Utilitati */
+.btn-light{
+  width:20%;
+  background:rgba(199, 21, 21,0.9);
+  color:lightgray;
+  padding:0.3rem 0.2rem;
+  font-size:1.3rem;
+  border-radius:10px;
+  border:2px solid #C71515;
+  transition:all 0.5s ease-in-out;
+  margin:auto;
+}
+.btn-light:hover{
+  background:rgba(199, 21, 21,0);
+  color:#333;
+}
+.btn{
+  background:rgba(199, 21, 21,0.9);
+  color:lightgray;
+  padding:0.5rem 1rem;
+  font-size:1.3rem;
+  border-radius:10px;
+  border:2px solid #C71515;
+  transition:all 0.5s ease-in-out;
+  
+}
+.constant{
+  color:#C71515;
+}
+.btn:hover{
+  background:rgba(199, 21, 21,0);
+
+}
+.l-heading{
+  font-size:4rem;
+}
+
+.m-heading{
+  font-size:2rem;
+}
+.s-heading{
+  font-size: 1.5rem;
+}
+
+.red-text{
+  color:var(--primary-color);
+}
+
+.gray-text{
+  color:rgb(211, 205, 205);
+}
+
+.white-text{
+color:white;
+}
+
+h1,h2,h3,h4,h5,h6{
+  
+  padding:1rem;
+  
+}
+h1,h2,h3,h4,h5,h6:hover{
+  cursor:default;
+}
+/* gym */
+#navbar {
+  display:flex;
+  justify-content: space-evenly;
+  gap:10rem;
+  background: rgba(0,0,0,0);
+  left:0;
+  border-top:4px solid rgba(199, 21, 21,0.6);
+}
+#navbar ul {
+  display:flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top:1rem;
+  
+ 
+}
+#navbar .links{
+  margin-top:0rem;
+}
+#navbar ul li{
+  padding:1rem;
+}
+#navbar ul li a{
+  color:white;
+  font-size:1.3rem;
+  font-weight: 500 ;
+  transition: all 0.4s ease-in-out;
+}
+#navbar ul li a:hover{
+  color:var(--primary-color);
+}
+#navbar .logo{
+padding:0.5rem 0;
+}
+
+#navbar .logo img{
+  width:100px;
+  height:100px;
+  padding:0.4rem;
+  opacity:0.8;
+}
+#navbar .logo img:hover{
+   opacity:100%;
+}
+.toggle-btn{
+  position:absolute;
+  top:2rem;
+  left:1.2rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:25px;
+  height:18px;
+  z-index: 6;
+}
+.bar{
+  height:2px;
+  width:100%;
+  background:white;
+  border-radius: 10px;
+  transition:all 0.4s ease-out;
+}
+/* header */
+#header{
+  background:url("./gym-image/showcase\ \(1\).jpg") no-repeat center center/cover;
+  height:100vh;
+}
+#showcase{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#showcase .showcase-text{
+text-align:center;
+}
+
+#showcase .showcase-text h1{
+  animation-name:animation1;
+  animation-duration: 3s;
+  cursor:default;
+  animation-timing-function: ease-in-out;
+  position:relative;
+  z-index: 0;
+}
+@keyframes animation1{
+    from{
+      top:-500px;
+    }
+    to{
+      top:0px;
+    }
+}
+#showcase .showcase-text h2{
+  animation-name:animation2;
+  animation-duration: 3s;
+  cursor:default;
+  animation-timing-function: ease-in-out;
+  position:relative;
+  z-index: 0;
+  
+}
+@keyframes animation2{
+  from{
+    left:-1000px;
+  }
+  to{
+    left:0;
+  }
+  
+}
+#showcase .showcase-text .bar{
+  background:var(--primary-color);
+  height:5px;
+  width:100%;
+  animation-name:animation3;
+  animation-duration: 3s;
+  
+  animation-timing-function: ease-in-out;
+  
+}
+@keyframes animation3{
+  from{
+    width:0;
+  }
+  to{
+    width:100%;
+  }
+  
+}
+
+/* header 1 */
+
+#header1{
+  background:url("./gym-image/showcase\ \(1\).jpg") no-repeat center/cover;
+  height:40vh;
+}
+#header1 h1{
+
+  text-align: center;
+  font-size:2.5rem;
+}
+/* info */
+#info{
+  margin-top:7rem;
+  display:flex;
+  background:rgb(211, 205, 205);;
+  gap:1rem;
+  
+}
+#info .info-img{
+  background:url("./gym-image/builder.jpg") no-repeat center center/cover;
+  height:700px;
+  flex:1;
+}
+#info .info-text{
+  flex:1;
+  padding:2rem 1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+#info .info-text img{
+  width:35px;
+  height:35px;
+}
+#info .info-text p{
+  color:#333;
+  margin-top:0.5rem;
+  
+  
+}
+#info .info-text h1{
+  text-align:left;
+  display:flex;
+  align-items: center;
+}
+#info .info-text i{
+  margin-right:0.4rem;
+}
+#info .info-text .more{
+  padding-top:3rem;
+  padding-right:2rem;
+  text-align:right;
+}
+#info .info-text a:hover{
+  color:#333;
+}
+/* sectiunea pt abonare */
+#abonare{
+  margin-top:7rem;
+ background:url('./gym-image/boy1.jpg') no-repeat center center/cover;
+ height:500px;
+ display:flex;
+ align-items: center;
+}
+#abonare .abonare-text{
+  color:rgb(211, 205, 205);
+  text-align:center;
+  padding-left:2rem;
+  line-height:1.5;
+}
+/* footer */
+footer img{
+  width:25px;
+  height:25px;
+  display:inline-block;
+  padding-top:0.2rem;
+}
+footer{
+  background:#111;
+  display:flex;
+  justify-content: space-evenly;
+  padding-bottom:4rem;
+  padding-top:2rem;
+  
+}
+
+footer .box1 h2, footer .box2 h2{
+   color:lightgray;
+   text-align:center;
+}
+
+footer  p{
+  padding:0.5rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .box2 p{
+  text-align:center;
+}
+.copyright{
+  color:white;
+  background:#111;
+  padding:0.2rem .5rem;
+  text-align:center;
+  bottom:0;
+display:flex;
+justify-content: space-between;
+
+}
+.copyright img{
+  width:25px;
+  height:25px;
+  border:2px solid var(--primary-color);
+  padding:0.2rem;
+}
+
+
+/* media for gym */
+
+@media(max-width:745px)
+{
+   #info{
+     display:block;
+   }
+   #info .info-img{
+     height:50vh;
+   }
+}
+
+
+@media  (max-width:670px) {
+  #navbar{
+    gap:1rem;
+  }
+  #abonare{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #abonare .abonare-text{
+    margin:0;
+    padding:0;
+  }
+  
+ 
+}
+@media(max-width:540px){
+  #navbar ul li{
+    gap:0;
+  }
+}
+@media(max-width:530px){
+  .toggle-btn{
+    display:flex;
+}
+#navbar{
+  justify-content: space-between;
+  padding:0 1rem;
+  flex-direction: column;
+  align-items:center;
+  gap:0;
+}
+.links{
+  position: absolute;
+  left:-500px;
+  background:rgba(178,0,0,0.95);
+  width:83%;
+  height:100vh;
+  transition: left .5s ease-out;
+  z-index: 4;
+ 
+}
+.links.activ-ham{
+  left:0px;
+}
+
+
+#navbar ul{
+  flex-direction: column;
+  width:100%;
+  padding:1rem;
+  
+ 
+}
+#navbar ul li{
+  padding:0.5rem;
+  margin-top:0.5rem;
+}
+#navbar ul li a:hover{
+  color:#333;
+}
+#navbar .logo img{
+  padding:0.2rem;
+  width:130px;
+  height:130px;
+}
+#showcase{
+  height:70vh;
+  z-index:0;
+}
+
+#showcase h1, #showcase h2{
+  font-size:2.5rem;
+  z-index:1;
+}
+#header1{
+  height:auto;
+}
+}
+@media(max-width:388px)
+{
+  footer{
+    display:block;
+  }
+}
+
+/* height */
+@media(max-height:569px){
+  #header1{
+    height:60vh;
+  }
+  #header{
+    height:110vh;
+  }
+}
+@media(max-height:369px){
+  #header1{
+    height:70vh;
+  }
+  #header{
+    height:120vh;
+  }
+}
+@media(max-height:317px){
+#header1{
+    height:80vh;
+  }
+}

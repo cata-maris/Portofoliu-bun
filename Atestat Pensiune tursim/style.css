@@ -1,0 +1,494 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background: #add8e6;
+}
+
+/* Meniu de navigatie */
+
+#meniu_navigatie {
+  background: #add8e6;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#meniu_navigatie a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+
+#meniu_navigatie .butoane_meniu {
+  display: flex;
+  justify-content: center;
+}
+
+#meniu_navigatie .butoane_meniu a {
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.8rem;
+  font-weight: bold;
+  border: black 1px solid;
+  border-radius: 10px;
+  color: black;
+}
+
+#meniu_navigatie .butoane_meniu a:hover {
+  background: black;
+  color: #add8e6;
+}
+
+/* Coperta */
+
+#imagine_coperta {
+  background: url(./imagini/pensiune-start.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #923c25;
+  font-size: 3.5rem;
+}
+.imagine_coperta_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #f4f4f4;
+}
+
+#imagine_coperta h2,
+#imagine_coperta p {
+  padding: 1rem;
+  border-radius: 20px;
+}
+#imagine_coperta h2 {
+  border-bottom: 3px double #f4f4f4;
+}
+
+/* Descriere */
+
+#descriere {
+  background: #add8e6;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px black solid;
+  margin: 0 15rem;
+}
+
+#descriere h2 {
+  padding: 2rem;
+}
+
+#descriere p {
+  padding: 0.5rem;
+}
+
+/* Galerie pagina de start */
+
+#sectiune_galerie_start {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  border: 1px black solid;
+  margin: 1rem auto;
+  border-radius: 10px;
+  width: 90%;
+}
+
+#sectiune_galerie_start img {
+  padding: 0.3rem;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#sectiune_galerie_start a {
+  background: url(./imagini/mai_multe_imagini.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 95%;
+  border-radius: 10px;
+  margin: 0.3rem;
+}
+
+#sectiune_galerie_start a:hover {
+  background: url(./imagini/mai_multe_imagini_hover.jpg) no-repeat center
+    center/cover;
+}
+
+/* Subsol */
+
+#subsol {
+  background: black;
+  color: white;
+}
+
+#subsol img {
+  width: 50px;
+  margin: 1rem;
+}
+
+#subsol p {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px white solid;
+}
+
+#subsol .social_media_subsol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Detalii Tehnice */
+/* Inventar */
+
+#detalii_tehnice_inventar {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  line-height: 1.3;
+  color: white;
+  background: black;
+  border-bottom: white 1px solid;
+}
+
+/* Anulare Gratuita */
+
+#anulare_gratuita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+#anulare_gratuita img {
+  height: 80px;
+}
+
+/* Atractii turistice */
+
+#atractii_turistice {
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
+  border-bottom: 1px white solid;
+}
+
+#atractii_turistice div {
+  padding: 2rem;
+}
+
+/* Avantaje */
+
+#avantaje {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px white solid;
+  padding-bottom: 1.5rem;
+}
+
+#avantaje h2 {
+  padding: 2rem;
+}
+
+#avantaje div {
+  display: flex;
+  align-items: center;
+}
+
+#avantaje img {
+  height: 50px;
+  margin: 0.5rem 1rem;
+}
+
+/* Facilitati */
+
+#facilitati {
+  text-align: center;
+  border-bottom: 1px black solid;
+}
+
+#facilitati h2 {
+  margin: 1rem;
+}
+
+#facilitati .lista_facilitati {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#facilitati .lista_facilitati div {
+  width: 20%;
+}
+
+/* Infomatii importante */
+
+#informatii_importante {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#informatii_importante h2 {
+  padding: 1rem;
+}
+
+#informatii_importante p,
+#informatii_importante h3 {
+  padding: 0.3rem;
+}
+
+/* Galerie */
+
+#galerie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px black solid;
+  border-radius: 15px;
+}
+
+#galerie img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+#galerie img:hover {
+  opacity: 0.8;
+}
+
+/* Contact */
+
+.border_jos {
+  border-bottom: black 2px solid;
+}
+
+#contact {
+  margin: 2rem 15rem;
+}
+
+#contact h2 {
+  border-bottom: white 1px solid;
+  padding: 1rem;
+}
+
+/* Intrebari Frecvente */
+
+#intrebari_frecvente {
+  background: black;
+  color: white;
+}
+
+#intrebari_frecvente h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+#intrebari_frecvente .intrebari-raspunsuri {
+  margin: 2rem 10rem 0 10rem;
+}
+
+#intrebari_frecvente .intrebari-raspunsuri p,
+#intrebari_frecvente .intrebari-raspunsuri h2 {
+  padding: 1rem 0;
+}
+
+/* Media Query */
+
+@media (max-width: 1350px) {
+  #galerie {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #sectiune_galerie_start {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #sectiune_galerie_start img:nth-child(4) {
+    display: none;
+  }
+
+  #descriere {
+    margin: 0 10rem;
+  }
+
+  #imagine_coperta {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #meniu_navigatie {
+    flex-direction: column;
+  }
+
+  #facilitati .lista_facilitati {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  #facilitati .lista_facilitati div {
+    width: 50%;
+  }
+
+  #contact {
+    margin: 2rem 5rem;
+  }
+
+  #intrebari_frecvente .intrebari-raspunsuri {
+    margin: 2rem 5rem 0 5rem;
+  }
+
+  #galerie {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #descriere {
+    margin: 0 5rem;
+  }
+
+  #imagine_coperta {
+    font-size: 2.5rem;
+  }
+
+  #sectiune_galerie_start {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #sectiune_galerie_start img:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #galerie {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #sectiune_galerie_start {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #sectiune_galerie_start img:nth-child(2) {
+    display: none;
+  }
+
+  #imagine_coperta {
+    font-size: 2rem;
+  }
+
+  #descriere {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 515px) {
+  #meniu_navigatie {
+    position: relative;
+  }
+
+  #meniu_navigatie .butoane_meniu {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #subsol .social_media_subsol {
+    flex-direction: column;
+  }
+
+  #subsol h3 {
+    padding: 1rem;
+  }
+
+  #subsol img {
+    margin: 0.5rem;
+    width: 100px;
+  }
+
+  #subsol .social_media_subsol .social_media_media_query {
+    display: flex;
+  }
+
+  #anulare_gratuita img {
+    height: 120px;
+    padding-right: 1.5rem;
+  }
+
+  #contact {
+    margin: 2rem 1rem;
+  }
+
+  #intrebari_frecvente .intrebari-raspunsuri {
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  #galerie {
+    grid-template-columns: 1fr;
+  }
+
+  #imagine_coperta {
+    font-size: 1.7rem;
+  }
+
+  #sectiune_galerie_start {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  #imagine_coperta {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  #subsol img {
+    width: 80px;
+  }
+
+  #atractii_turistice div {
+    padding: 1rem;
+  }
+
+  #anulare_gratuita img {
+    display: none;
+  }
+
+  #atractii_turistice {
+    flex-direction: column;
+  }
+
+  #contact,
+  #intrebari_frecvente {
+    text-align: center;
+  }
+
+  #intrebari_frecvente ul {
+    list-style: none;
+  }
+}

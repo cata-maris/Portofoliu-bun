@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Restaurant Doi Frati</title>
+  </head>
+  <body>
+    <div id="bara">
+      <div class="logo">
+        <h4>Doi Frati</h4>
+        <img
+          src="./img/—Pngtree—vector illustration fork spoon chef_5455666.png"
+          alt=""
+        />
+      </div>
+      <ul>
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="meniu.html">Meniu </a></li>
+        <li><a class="activ" href="rezervare.html">Rezervari</a></li>
+      </ul>
+    </div>
+    <div class="imgre"></div>
+    <div class="contact-form">
+      <form>
+        <div class="form-grup">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Adresa de email"
+          />
+        </div>
+        <div class="form-grup">
+          <label for="date">Data</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div class="form-grup">
+          <label for="time">Ora</label>
+          <input required type="time" name="time" id="time" />
+        </div>
+        <div class="form-grup">
+          <label for="number">Numar de persoane</label>
+          <input min="1" max="12" type="number" name="number" id="number" />
+        </div>
+        <a href="rezervare.html">Rezerva</a>
+      </form>
+    </div>
+
+    <footer><p>Doi Frati Restaurant | Classy Since 1990</p></footer>
+  </body>
+</html>
