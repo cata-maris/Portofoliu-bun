@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+#meniu {
+  background: #f88379;
+}
+
+#meniu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#meniu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  color: #880808;
+}
+#meniu ul li a:hover {
+  background: #880808;
+  color: white;
+}
+#meniu ul li img {
+  height: 15vh;
+}
+#poza-principala {
+  background: url("./img/car-building-vehicle-hood-Mercedes-Benz-sports-car-835093-wallhere.com.jpg")
+    no-repeat center center/cover;
+  height: 80vh;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 30px;
+}
+
+#imagine2 {
+  background: url("./img/wallpaperflare.com_wallpaper.jpg") bottom/cover
+    no-repeat;
+  height: 50vh;
+}
+#informatii {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: #f88379;
+  background-color: #880808;
+}
+#informatii ul {
+  margin-top: 20px;
+}
+#informatii ul li {
+  margin-top: 5px;
+}
+
+#descriere {
+  background-color: #f88379;
+  color: #880808;
+  border: 2px #333 solid;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#descriere h3 {
+  margin-top: 10px;
+  text-decoration: solid;
+}
+
+#descriere a {
+  padding: 7px;
+  color: #880808;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  border: 2px solid #880808;
+  width: 100px;
+  border-radius: 10px;
+}
+
+#descriere a:hover {
+  background-color: #880808;
+  color: white;
+}
+footer {
+  background: #333;
+  color: #f88379;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#poza-principala h2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+}
+
+#galerie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  background: #880808;
+}
+#galerie img {
+  width: 100%;
+  height: 50vh;
+}
+
+#contact {
+  background: #880808;
+  padding-top: 30px;
+  color: #f88379;
+}
+#contact .contact-forma {
+  height: 55vh;
+  width: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#contact .contact-forma .forma {
+  padding: 8px;
+}
+#contact .contact-forma label {
+  display: block;
+}
+#contact .contact-forma #name,
+#contact .contact-forma #email,
+#contact .contact-forma #text {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+#contact .forma textarea {
+  width: 100%;
+  height: 48px;
+  margin: 0.16px 0;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+.buton {
+  padding: 7px;
+  color: #880808;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  border: 2px solid #880808;
+  width: 100px;
+  border-radius: 10px;
+  align-self: center;
+  background-color: #f88379;
+  font-size: 16px;
+}
+.buton:hover {
+  color: #f88379;
+  background-color: #880808;
+  border: 2px solid #f88379;
+  cursor: pointer;
+}
+
+.imagine3 {
+  background: url("./img/263195.jpg") bottom;
+  height: 60vh;
+}
+
+#date {
+  background-color: #f88379;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ghid p {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+.ghid {
+  background: #f4f4f4;
+}

@@ -1,0 +1,419 @@
+ *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  body{
+    line-height: 1.4;
+    font-family: 'Oswald', sans-serif;
+  }
+
+   .activ{
+     border:2px #333 solid;
+   }
+  /* mini */
+  #mini{
+    background:#f4f4f4;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    padding: 10px 40px;
+  }
+  #mini div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mini img{
+    width: 40px;
+    height: 30px;
+  }
+
+  /* meniu */
+  #meniu {
+    background:#ffd500;
+    /* background:#f4f4f4; */
+  }
+
+  #meniu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  #meniu ul li img{
+    width:200px;
+    height:200px;
+  }
+ 
+
+  #meniu ul li a{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+    border:2px #ffd500 solid;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+  }
+  #meniu ul li a:hover{
+    border:2px #333 solid;
+    color:#333;
+  }
+ 
+  /* poza */
+  #poza-principala{
+    background:url(./imagini/muncitor1.jpg) center center/cover no-repeat;
+    height:80vh;
+    margin-top:100px;
+  }
+
+/* prezentare */
+#prezentare{
+  margin-top:100px;
+  background:#f4f4f4;
+  text-align: center;
+  font-size:20px;
+  padding:20px;
+  
+}
+#prezentare h2{
+  color:#333;
+}
+.prezentare1{
+  margin-top:60px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap:20px;
+}
+.p-poze{
+  flex:1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:0;
+  margin:0;
+  
+}
+.p-poze img{
+  width:400px;
+  height:200px;
+  margin-bottom:15px;
+}
+.p-text{
+  flex:2;
+  color:gray;
+}
+  
+/* parteneri */
+#parteneri{
+  background:#ffd500;
+  margin-top:80px;
+  text-align: center;
+  padding:16px;
+}
+#parteneri div{
+  MARGIN-TOP:15PX;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+#parteneri div IMG{
+  margin:10px;
+}
+#jos{
+  margin-top:50px;
+  background:#444;
+  color:#f4f4f4;
+  text-align: center;
+  border-bottom:1px solid #444;
+}
+#jos p:first-child{
+  border-bottom:white 1px solid;
+}
+#jos p{
+  padding:5px;
+}
+
+/*  despre */
+#poza-2{
+  background:url(./imagini/muncitor2.jpg) center center/cover no-repeat;
+  height:80vh;
+  margin-top:80px;
+}
+#despre{
+  margin-top:60px;
+  text-align: center;
+  color:#444;
+}
+.despre-text{
+  display:flex;
+  text-align: center;
+  padding:10px;
+  gap:50px;
+  margin-top:40px;
+}
+.despre-text div{
+  padding:10px;
+  border:solid 2px #ffd500;
+  border-radius:10px;
+}
+.despre-text div p{
+  margin-top:20px;
+
+}
+#despre-poze{
+  display: flex;
+  margin-top:50px;
+  justify-content: space-evenly;
+}
+#despre-jos{
+  margin-top:60px;
+  color:#444;
+  text-align: center;
+  padding:10px;
+}
+#despre-jos a{
+    margin-top: 20px;
+    text-decoration: none;
+    color:black;
+    padding:10px;
+    border-radius: 8px;
+    display:inline-block;
+    background:#ffd500;
+    width:200px;
+    text-align:center;  
+}
+#despre-jos a:hover{
+  background:#ffc500
+}
+/* servicii */
+#poza-3{
+  background:url(./imagini/santier2.jpeg) center center/cover no-repeat;
+  height:80vh;
+  margin-top:80px;
+}
+#servicii{
+  color:#444;
+  text-align: center;
+  margin-top:30px;
+  
+}
+#servicii ul{
+  font-size:20px;
+  margin-top:20px;
+  list-style-type: disc;
+}
+#servicii ul li{
+  margin-top:10px;
+}
+#servicii h2{
+  border-bottom:solid 2px #ffd500;
+  padding:5px;
+}
+/* contact */
+#poza-4{
+  background:url(./imagini/contact.jpeg) center center/cover no-repeat;
+  height:80vh;
+  margin-top:80px;
+}
+  #contact {
+
+    margin-top:50px;
+  }
+
+#contact .contact-forma{
+  height:auto;
+  width:auto;
+  padding:16px;
+  margin:auto;
+  background:#ffd500;
+  display:flex;
+  flex-direction: column;
+}
+#contact .contact-forma .forma{
+  padding:0.5rem;
+}
+#contact .contact-forma label{
+  display:block;
+}
+#contact .contact-forma #name,#contact .contact-forma #email,#contact .contact-forma #text{
+  width:100%;
+  padding:0.5rem;
+  margin:.2rem 0;
+  border-radius: 10px;
+  border-radius: 6px;
+  border:1px solid #333;
+
+}
+#contact .forma textarea{
+  width:100%;
+  height:3rem;
+  margin:.2rem 0;
+  border-radius: 6px;
+  border:1px solid #333;
+}
+.buton{
+  width:100px;
+  display:inline-block;
+  padding:8px;
+  border-radius:10px;
+  border:1px dashed #333;;
+  align-self: center;
+  background:#ffd500;
+  margin-top:5px;
+  font-size:18px;
+}
+.buton:hover{
+  border: 1px solid #333;
+  cursor: pointer;
+}
+@media(max-width:1300px)
+{
+
+  #despre-poze img{
+    width:45%;
+  }
+}
+@media(max-width:542px)
+{
+    #meniu ul li img{
+      width:150px;
+      height:150px
+    }
+    #meniu ul li{
+      font-size:14px;
+    }
+    #mini{
+      font-size:14px;
+      padding:5px;
+    }
+    #despre-poze img:last-child{
+      display:none;
+    }
+    #despre-poze img{
+      width:80%;
+    }
+
+}
+@media(max-width:464px)
+{
+  #poza-principala{
+    margin-top:40px;
+  }
+  #poza-2{
+    margin-top:40px;
+  }
+  #poza-3{
+    margin-top:40px;
+  }
+  #poza-4{
+    margin-top:40px;
+  }
+  #meniu ul li img{
+    width:100px;
+    height:100px
+  }
+  #meniu ul li a{
+    font-size:14px;
+    padding:8px;
+  }
+  .prezentare1 img{
+    width:90%;
+    height:120px;
+  }
+  .prezentare1{
+    font-size:16px;
+  }
+  #parteneri div IMG{
+    width:57%
+  }
+  
+  #parteneri h2{
+    font-size: 18px;
+  }
+  #jos{
+    font-size:15px;
+  }
+
+   #despre{
+     margin-top:40px;
+     font-size:16px;
+   }
+   #despre h2{
+     font-size:20px
+   }
+   #despre h1{
+     font-size: 24px;
+   }
+   .despre-text{
+     margin-top:30px;
+   }
+   #despre-jos{
+     font-size:12px;
+   }
+   #despre-jos a{
+     font-size: 16px;
+   }
+   #servicii{
+     font-size: 13px;
+   }
+   #servicii ul {
+     font-size: 18px;
+   }
+   
+}
+@media(max-width:394px){
+  .logo{
+    display:none;
+  }
+  #meniu{
+    height:auto;
+    padding:20px;
+  }
+  #mini{
+    display:block;
+  }
+}
+@media(max-width:337px){
+  #meniu{
+    height:auto;
+    padding-top:0;
+    padding-bottom: 15px;
+  }
+  #meniu ul{
+    flex-direction: column;
+    
+  }
+  #meniu ul li{
+    margin-top:20px;
+    border-bottom:1px dotted #333;
+  }
+  #meniu ul li a:hover{
+    border:solid 1px #ffd500;
+  }
+  #despre-poze img{
+    height:180px;
+    width:93%;
+  }
+}
+@media(max-width:911px)
+{
+  .prezentare1{
+    flex-direction: column;
+  }
+}
+
+@media(max-width:820px){
+
+  .despre-text{
+    gap:10px;
+    flex-wrap: wrap;
+  }
+}
