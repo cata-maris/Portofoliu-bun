@@ -1,0 +1,71 @@
+
+/* despre */
+#despre {
+  background:lightgray;
+  margin-top:3rem;
+  padding:3rem 6rem;
+  font-size:1.3rem;
+ 
+}
+.facilitati-img{
+  flex:1;
+}
+.facilitati-text{
+  margin:1.5rem 0;
+  color:#333;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.facilitati-text h1{
+  color:#555;
+  text-align:center;
+  border-bottom: 2px dotted gray;
+}
+.lista-titlu{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lista{
+  display:flex;
+  align-items:flex-start;
+  justify-content: space-evenly;
+  font-size:1.1rem;
+  padding:0.5rem;
+  gap:2rem;
+}
+.lista ul{
+  list-style: none;
+}
+.lista .ul1{
+  flex:1;
+}
+.lista .ul2{
+  flex:1;
+}
+.lista ul li{
+  padding:0.4rem;
+}
+.facilitati-img{
+  background:url(./gym-image/gantere.jpg) center no-repeat  ;
+  height:400px;
+  width:100%;
+}
+
+/* media pentru facilitati */
+ @media(max-width:900px)
+ {
+   .facilitati-text{
+     display:block;
+   }
+ }
+ @media(max-width:550px){
+   #despre{
+     padding:1rem;
+   }
+ }

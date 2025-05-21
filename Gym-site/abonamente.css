@@ -1,0 +1,93 @@
+
+/* abonamente */
+#abonamente{
+  background:url("./gym-image/seamless.jpg")
+}
+
+#abonamente .abonamente-container{
+  display:flex;
+  flex-wrap: wrap;
+  height:auto;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  padding:2rem;
+
+}
+#abonamente .abonamente-container .a-box{
+  background:rgb(211, 205, 205);
+  padding:4rem 2.5rem;
+  border-radius:20px;
+  text-align: center;
+  margin:1rem 1rem;
+ 
+
+}
+#abonamente .abonamente-container .a-box:hover{
+
+ opacity:0.96
+}
+#abonamente .abonamente-container .a-box h1{
+  padding:1rem;
+}
+/* abonamente speciale */
+#abonamente-speciale{
+  background:rgb(211, 205, 205);
+  padding-top:2rem;
+  text-align: center;
+  margin-right:0;
+
+}
+#abonamente-speciale p{
+  margin-top:1rem;
+}
+
+#abonamente-speciale .a-s-container{
+  height:auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center ;
+  align-items: center;
+  padding-left:0.5rem;
+  width:auto;
+}
+
+#abonamente-speciale .a-s-container .a-box{
+  padding:1rem 1rem;
+  border-radius:20px;
+  text-align: center;
+  background:white;
+  margin:1.5rem;
+}
+#abonamente-speciale .a-s-container .a-box:hover{
+    opacity:0.8;
+    background:#f4f4f4;
+}
+#abonamente-speciale .a-s-container .a-box h1{
+  padding:1rem;
+}
+#abonamente-speciale p{
+  font-size:1.2rem;
+  text-align: right;
+  padding-bottom: 1rem;
+  padding-right:1rem;
+}
+
+
+
+@media (max-width:910px){
+  #abonamente-speciale h1, #abonamente h1{
+        font-size:1.6rem;
+  }
+}
+@media (max-width:800px){
+  #abonamente-speciale h1, #abonamente h1{
+        font-size:1.4rem;
+  }
+}
+@media (max-width:660px){
+  #abonamente-speciale .a-s-container .a-box, #abonamente .abonamente-container .a-box{
+    padding:1rem;
+  }
+ }
+

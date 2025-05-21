@@ -115,3 +115,15 @@ const revealOnScroll = () => {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+// scripts for linking sites with cards
+
+document.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".projects-box"); // Găsește div-ul apăsat
+  if (clicked) {
+    const link = clicked.getAttribute("data-link"); // Citește valoarea
+    if (link) {
+      window.open(link, "_blank"); // Deschide linkul în tab nou
+    }
+  }
+});
