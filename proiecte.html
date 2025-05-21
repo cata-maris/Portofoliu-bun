@@ -55,7 +55,7 @@
     <section id="projects">
       <div class="projects-container">
         
-        <div class="projects-box">
+        <div class="projects-box" data-link="./Proiect Dezvoltatori/index.html">
           <div class="image-box">
             <img src="/images/img-portfolio/dezvoltator.JPG" alt="">
           </div>
@@ -66,7 +66,7 @@
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="projects-box">
+        <div class="projects-box" data-link="./proiect cata v3/index.html">
           <div class="image-box">
             <img src="/images/img-portfolio/aplicatie.jpg" alt="">
           </div>
@@ -77,29 +77,29 @@
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="projects-box">
+        <div class="projects-box" data-link="./photo-site/photo-index.html">
           <div class="image-box">
-           <img src="/images/img-portfolio/photosite.jpg" alt="">
+           <img src="/images/img-portfolio/phonephotography.png" alt="">
           </div>
           <div class="projects-box-text">
             <h2>BP-Photography</h2>
-            <h4>Site de promovare dedicat în domeniul fotografiei</h4>
+            <h4>Site de promovare dedicat industriei foto/audio/video, firmă fictivă</h4>
             <p>Dezvoltat de Catalin Maris</p>
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="projects-box">
+        <div class="projects-box" data-link="./Gym-site/gym.html">
           <div class="image-box">
-            <img src="/images/img-portfolio/gym-site (1).jpg" alt="">
+            <img src="/images/img-portfolio/gymsitepc.png" alt="">
           </div>
           <div class="projects-box-text">
             <h2>Gym Fury</h2>
-            <h4>Site de promovare dedicat industriei fitness</h4>
+            <h4>Site de promovare dedicat industriei fitness, firmă fictivă</h4>
             <p>Dezvoltat de Catalin Maris</p>
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-              <div class="projects-box">
+              <div class="projects-box" data-link="./Atestat Showroom/index.html">
           <div class="image-box">
             <img src="/images/img-portfolio/showroom (1).jpg" alt="">
           </div>
@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <div class="projects-box">
+        <div class="projects-box" data-link="./Atestat Restaurant/index.html">
           <div class="image-box">
             <img src="/images/img-portfolio/doifrati (1).jpg" alt="">
           </div>
@@ -122,18 +122,18 @@
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="projects-box">
+        <div class="projects-box" data-link="./Atestat Sala Fitness/Sala fitness/gym.html">
           <div class="image-box">
             <img src="/images/img-portfolio/gymatestat.jpg" alt="">
           </div>
           <div class="projects-box-text">
             <h2>Sala Fitness</h2>
-            <h4>>Proiect model pentru obținerea atestatului profesional la informatică</h4>
+            <h4>Proiect model pentru obținerea atestatului profesional la informatică</h4>
             <p>Dezvoltat de Catalin Maris</p>
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="projects-box">
+        <div class="projects-box" data-link="./Atestat McDonalds/index.html">
           <div class="image-box">
             <img src="/images/img-portfolio/mcdonalds (1).jpg" alt="">
           </div>
@@ -144,7 +144,7 @@
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-          <div class="projects-box">
+          <div class="projects-box" data-link="./Atestat Pensiune tursim/index.html">
           <div class="image-box">
             <img src="/images/img-portfolio/pensiune (1).jpg" alt="">
           </div>
@@ -155,7 +155,7 @@
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-          <div class="projects-box">
+          <div class="projects-box" data-link="./Construction site/pagina_principala.html">
           <div class="image-box">
             <img src="/images/img-portfolio/siteconstruct.jpg" alt="">
           </div>
@@ -166,7 +166,7 @@
             <a href="" class="projects-btn"> <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-          <div class="projects-box">
+          <div class="projects-box" data-link="./proiect cata v3/index.html">
           <div class="image-box">
             <img src="/images/gallery5.JPG" alt="">
           </div>
@@ -262,6 +262,17 @@ function loaderTimeout() {
 window.addEventListener("load", loaderTimeout);
 
 console.log("Scriptul a fost încărcat!");
+
+document.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".projects-box"); // Găsește div-ul apăsat
+  if (clicked) {
+    const link = clicked.getAttribute("data-link"); // Citește valoarea
+    if (link) {
+      window.open(link, "_blank"); // Deschide linkul în tab nou
+    }
+  }
+});
+
 
     </script>
   </body>
