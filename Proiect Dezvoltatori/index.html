@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/21cc80cb87.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>Custom | Residence</title>
+  </head>
+  <body>
+    <div class="hamburger">
+      <span class="span-1"> </span> 
+      <span class="span-2"></span> 
+      <span class="span-3"> </span> 
+    </div>
+    <nav>
+      <ul class="navlist">
+        <li><a class="bold" href="./index.html">Despre noi</a></li>
+        <li><a href="./locuinte.html">Locuințe</a></li>
+        <li><a href="locatie.html">Locație</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="./img/logo-transparent-copie.png" alt="LOGO" />
+      <div class="nav-contacts">
+        <a href="https://www.facebook.com/cata.maris"> <i class="fa-brands fa-square-facebook"></i></a>
+       <a href=""> <i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+    </nav>
+    <section id="welcome-section">
+      <div class="welcome-box">
+        <div class="welcome-text">
+          <h3 class="headings">Descoperă</h3>
+          <h3 class="headings">Custom Residence</h3>
+          <h3 class="headings">cel mai nou proiect imobiliar</h3>
+          <a href="#contact" class="welcome-btn">Solicită ofertă</a>
+        </div>
+
+    </section>
+    <section id="starting-info">
+      <div class="starting-info-text">
+        <div>
+          <span>Cine suntem?</span><br><br> Cu o experienţă de peste 10 ani și zeci de proiecte finalizate, construim spații moderne și durabile, adaptate nevoilor clienților. 
+        </div>
+      <div>
+        Ce oferim?
+       <br><br><span>Custom Residence îmbină arhitectura modernă cu accesibilitatea urbană și liniștea naturii, oferind apartamente ideale pentru familii, tineri profesioniști sau investitori.</span>
+      </div>
+    </div>
+      <div class="starting-info-images">
+        <img src="./img/roxanne-joncas-DxLGT3bEKkE-unsplash.jpg" alt="">
+        <img src="./img/burak-arslan-TgEoxRAVqwg-unsplash.jpg" alt="">
+      </div>
+
+    </section>
+<section id="apartments-section">
+
+<div id="apartments">
+      <div class="ap-box"><h3>Studiouri</h3> <h2>Studio</h2></div>        
+      <div class="ap-box"><h3>Apartamente cu 2 camere</h3> <h2>Două camere</h2></div>        
+      <div class="ap-box"><h3>Apartamente cu 3 camere</h3><h2>Trei camere</h2></div>        
+      <div class="ap-box"><h3>Penthouse-uri</h3><h2>Penthouse</h2></div>        
+</div>
+
+  <div class="ap-text">
+    <h2> <i>Custom <br> Residence</i></h2>
+    <p>Localizat în nordul Constanţei, vă oferim un cămin cald şi primitor înconjurat de spaţii verzi şi voie bună. Apartamentele se pot achiziționa la cheie sau mobilate integral.  </p>
+    <div class="ap-icons">
+      <h3><i class="fa-regular fa-building"></i> 120 apartamente</h3>
+      <h3><i class="fa-solid fa-square-parking"></i> Parcare subterană</h3>
+      <h3><i class="fa-solid fa-tree"></i> Spaţii verzi</h3>
+      <h3><i class="fa-solid fa-video"></i> Supraveghere video</h3>
+    </div>
+    <a class="btn" href="#contact">Cere oferta</a>
+  </div>
+</section>
+
+
+<section id="location">
+  <div class="loc-text-image">
+    <div class="location-text">
+      <h3><i class="fa-solid fa-arrow-up-from-water-pump"></i> 5 minute față de plaja</h3>
+      <h3><i class="fa-solid fa-cart-shopping"></i> 10 minute față de CityPark</h3>
+      <h3><i class="fa-solid fa-store"></i> Supermarketuri în apropiere</h3>
+      <h3><i class="fa-solid fa-school"></i> Scoli, grădinițe, spitale în apropiere</h3>
+      <h3><i class="fa-solid fa-seedling"></i> Parcuri în imediata apropiere</h3>
+  </div>
+  </div>
+    <div id="location-map"></div>
+</section>
+<!-- contact form -->
+<section id="contact">
+  <div class="contact-form">
+    <h2> Solicită o ofertă </h2>
+    <h4>Completează formularul, iar unul dintre agenții nostri te va contacta pentru mai multe detalii și pentru a discuta opțiunile dorite</h4>
+    <form name="contact-form" method="POST" data-netlify="true">
+      <div class="form-grup">
+        <label for="name">Nume</label>
+        <input type="text" name="name" id="name" placeholder="Introduceți numele">
+      </div>
+      <div class="form-grup">
+        <label for="name">Prenume</label>
+        <input type="text" name="name" id="name" placeholder="Introduceți prenumele">
+      </div>
+       <div class="form-grup">
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email" placeholder=" Introduceți Email-ul">
+       </div>
+       <div class="form-grup">
+        <label for="phone">Număr de telefon</label>
+        <input type="tel" id="phone" name="phone" placeholder="Ex: +40774610524">
+       </div>
+         <input class="input-btn" type="submit" value="Trimite" class="btn-submit">
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="social-media">
+    <h3>Ne găsiţi si pe social media</h3>
+    <div>
+      <h4><a href="https://www.facebook.com/cata.maris">Pagina de facebook <i class="fa-brands fa-square-facebook"></i></a></h4>
+      <h4><a href="">Pagina de Instagram <i class="fa-brands fa-square-instagram"></a></i></h4>
+      <h4><a href="">Video promotional <i class="fa-brands fa-youtube"></i> </a> </h4>
+
+    </div>
+  </div>
+    <div class="contact-footer">
+      <div class="footer-h">
+        <h3><i class="fa-solid fa-phone"></i> Tel: 0774610524</h3>
+        <h3><i class="fa-solid fa-envelope"></i> Email: cata.maris75@gmail.com</h3>
+        <h3><i class="fa-brands fa-facebook"></i> Facebook: Catalin Maris</h3>
+      </div>
+      <p> &copy; Site realizat de Maris Marius Cătălin. Imaginile și conținutul creat sunt fictive, cu scop strict publicitar. </p>
+    </div>
+</footer>
+  
+<button id="top-btn" title="Go to top"><i class="fa-solid fa-upload"></i></button>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

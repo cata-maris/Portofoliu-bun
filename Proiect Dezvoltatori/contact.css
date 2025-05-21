@@ -1,0 +1,31 @@
+#contact-welcome {
+  height: 70vh;
+  background: url(./img/pexels-igor-starkov-233202-1693946.jpg) center
+    center/cover no-repeat;
+}
+.contact-welcome-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+.contact-welcome-text img {
+  width: 230px;
+}
+.contact-welcome-text h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px;
+  border: 3px double #111;
+  color: #333;
+  border-radius: 10px;
+}
+#contact {
+  margin-top: 1rem;
+}
