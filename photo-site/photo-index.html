@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./photo-style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;1,300& display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1d57151849.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>BP | Photography</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <p class="logo"><i class="fa fa-camera green-text"></i>BPphotography</p>
+      <a href="#" class="btn-toggle">
+        <span class="span-1"></span>
+        <span class="span-2"></span>
+        <span class="span-3"></span>
+      </a>
+      <div class="links">
+        <ul>
+          <li class="fix"><a href="photo-index.html">Acasa</a></li>
+          <li><a href="despre.html">Despre noi</a></li>
+          <li><a href="servicii.html">Servicii si Preturi</a></li>
+          <li><a href="portofoliu.html">Portofoliu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- poza principala -->
+    <section id="poza-mare">
+      <div class="scris">
+        <h1>Studioul BPphotography</h1>
+        <p>Pe placul tuturor!</p>
+        <a class="btn" href="despre.html">Despre Noi</a>
+      </div>
+    </section>
+
+    <!-- facilitati -->
+    <section id="facilitati">
+      <div class="box">
+        <img loading="lazy" class="img" src="./img/aparat2.jpg" alt="" />
+        <h1>Sedinte foto</h1>
+        <p>
+          Oferim servicii de fotografie, filmari evenimente, simplu si rapid.
+        </p>
+      </div>
+      <div class="box">
+        <img loading="lazy" src="./img/album.jpg" alt="" />
+        <h1>Realizare albume</h1>
+        <p>
+          Realizam albume pentru diferite folosinte, de la prezentare pana la
+          albume de absolvent.
+        </p>
+      </div>
+      <div class="box">
+        <img loading="lazy" src="./img/edit.jpg" alt="" />
+        <h1>Editare fotografii</h1>
+        <p>Realizam edituri in Photoshop de cea mai buna calitate.</p>
+      </div>
+    </section>
+
+    <!-- categorii -->
+    <section id="categorii">
+      <div class="mini-nav">
+        <div class="scirs-cat">
+          <h1>Categorii</h1>
+          <p>O varietate de idei si modele</p>
+        </div>
+        <a class="btn" href="portofoliu.html">Vezi mai multe</a>
+      </div>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="./img/poza10.JPG" style="width: 100%" />
+          <div class="text">Poze din natura</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="./img/poza1.jpg" style="width: 100%" />
+          <div class="text">Portrete</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="./img/poza12.jpg" style="width: 100%" />
+          <div class="text">Poze cu animale</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="./img/diverse2.JPG" style="width: 100%" />
+          <div class="text">Diverse</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section id="oameni">
+      <h2>Parerea ta conteaza!</h2>
+      <p>Vezi ce spun clientii nostri</p>
+      <div class="oameni-container">
+        <div class="oameni-box">
+          <div class="pn">
+            <img src="./img/oameni2.jpg" alt="" />
+            <h3>
+              Denisa <br />
+              Maris
+            </h3>
+          </div>
+          <p>
+            Personal de treaba, calitatea serviciilor este pe masura
+            asteptarilor.
+          </p>
+        </div>
+        <div class="oameni-box">
+          <div class="pn">
+            <img src="./img/oameni2.jpg" alt="" />
+            <h3>
+              Alexandra <br />
+              Maria
+            </h3>
+          </div>
+          <p>
+            Am fost foarte incantata. Am facut din botezul baiatului meu o
+            amintire de neuitat.
+          </p>
+        </div>
+        <div class="oameni-box">
+          <div class="pn">
+            <img src="./img/oameni1.jpg" alt="" />
+            <h3>
+              Balan <br />
+              Ilie
+            </h3>
+          </div>
+          <p>
+            Super misto!Am avut o nunta pe cinste, filmata intr-un mod
+            profesional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="boxes">
+        <div class="box">
+          <p class="logo">
+            <i class="fa fa-camera green-text"></i>BPphotography
+          </p>
+          <p>
+            Vrei sa marchezi momentul prin fotografii? Beneficiezi de cele mai
+            bune servicii alaturi de Bpphotography! Urmareste-ne si pe retelele
+            de socializare.
+          </p>
+          <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-github"></i>
+          </div>
+        </div>
+        <div class="box dates">
+          <p>Date de contact</p>
+          <p>Email: bpcompany19@gmail.com</p>
+          <p>Tel: Coming Soon</p>
+          <p>Adresa: Borsa, Maramures</p>
+          <a class="btn" href="contact.html">Trimite un mesaj</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>BPphotography | No right Reserved</p>
+      </div>
+    </footer>
+    <div class="loading">
+      <img src="./img/loading.gif" alt="loading..." />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      setTimeout(function () {
+        $(".loading").fadeToggle();
+      }, 1100);
+    </script>
+    <script defer src="./script.js"></script>
+  </body>
+</html>

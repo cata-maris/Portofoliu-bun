@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analiza eficacitatii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+        <li> <a href="index.html">Detalii soft</a> </li>
+        <li><a href="eficacy.html">Calculator de efiacitate</a></li>
+    </ul>
+</nav>
+    <section id="first-wallpaper">
+        <div class="main-area">
+            <form class="eficacy-calc">
+                <div class="main-buttons">
+                    <button class="aeroplanes-btn">
+                        <img src="./img/21325.jpg" alt="plane">
+                        <span>Moduri</span>
+                    </button>
+
+                    <button class="weaponry-btn">
+                        <img src="./img/weaponry.JPG" alt="plane">
+                        <span>Armament</span></button>
+                    </button>
+                </div>
+            
+                <div name="aeroplane" class="aeroplane" id="aeroplane-selector">
+                    <div class="aeroplane_weaponry-model">
+                        <img src="./img/f16.jpg" alt="vanatoare">
+                        <div class="text-container">
+                            <h3>Mod Avansat</h3>
+                            <p>Modul avansat e caracterizat de următoarele situații: <br> Nivelul de pregătire al piloților este foarte bun<br>
+                            probabilitatile de functionare, atac, descoperire sunt ridicate, de patrundere la obiectiv: 95% </p>
+                        </div>
+                        <div class="selector-cover" id="vnt"></div>
+                    </div>
+                    <div class="aeroplane_weaponry-model">
+                        <img src="./img/iar_99.jpg" alt="iar99">
+                        <div class="text-container"> 
+                            <h3>Mod Mediu </h3>
+                            <p>Nivelul de pregătire al piloților este bun <br>
+                                probabilitatile de functionare, atac, descoperire au valori medii, de patrundere la obiectiv: 90%</p>
+                        </div>
+                        <div class="selector-cover" id="bmb"></div>
+                    </div>
+                </div>
+                
+                <div name="aeroplane" class="aeroplane" id="weaponry-selector">
+                    <div class="aeroplane_weaponry-model">
+                        <img src="./img/f16.jpg" alt="prnd">
+                        <div class="text-container">
+                            <h3>PRND</h3>
+                            <p>coeficient caracteristic: 0,006 <br> coeficient de corelație: 0,8</p>
+                        </div>
+                        <div class="selector-cover" id="prnd"></div>
+                    </div>
+                    <div class="aeroplane_weaponry-model">
+                        <img src="./img/iar_99.jpg" alt="tun">
+                        <div class="text-container">
+                            <h3>Tun</h3>
+                            <p>coeficient caracteristic: 0,004 <br> coeficient de corelație: 0,75</p>
+                        </div>
+                        <div class="selector-cover" id="tun"></div>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="input-category">
+                        <div class="input-container">
+                            <label for="no-of-projectiles">Numarul de proiectile</label>
+                            <input type="text" name="no-of-projectiles">
+                        </div>
+                        
+                        <div class="input-container">
+                            <label for="angle">Unghiul de picaj (gr)</label>
+                            <input type="text" name="angle">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="no-of-plane">Numar de avioane</label>
+                            <input type="text" name="no-of-plane">
+                        </div>
+                    </div>
+                    
+                    <div class="input-category">
+                        <div class="input-container">
+                            <label for="length">Lungimea tintei (m)</label>
+                            <input type="text" name="length">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="width">Latimea tintei (m)</label>
+                            <input type="text" name="width">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="height">Inaltimea tintei (m)</label>
+                            <input type="text" name="height">
+                        </div>
+                    </div>
+
+                    <div class="input-category">
+                        <div class="input-container">
+                            <label for="raza">Raza de siguranta (m)</label>
+                            <input type="text" name="raza">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="time-of-firing">Timpul de tragere (s)</label>
+                            <input type="text" name="time-of-firing">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="expected-probability">Probabilitatea dorita</label>
+                            <input type="text" name="expected-probability">
+                        </div>
+                    </div>
+
+                    <div class="input-category" id="viteze">
+                        <div class="input-container">
+                            <label for="speed-of-turning">Viteza de redresare (m/s)</label>
+                            <input type="text" name="speed-of-turning">
+                        </div>
+                    
+                        <div class="input-container">
+                            <label for="initial-speed">Viteza de intrare in picaj (m/s)</label>
+                            <input type="text" name="initial-speed">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="no-of-targets">Numarul de tinte</label>
+                            <input type="text" name="no-of-targets">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button class="calculate-btn" type="submit">Calculeaza</button>
+                    <button class="show-results-btn">Afiseaza Rezultatele</button>
+                </div> 
+            </form>
+
+            <div class="result">
+                <button class="close-btn">X</button>
+                <h2>Analiza Rezultate</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nr. de Proiectile</th>
+                            <th>Unghiul de Picaj (gr)</th>
+                            <th>Distanta Medie de Tragere (m)</th>
+                            <th>Lungimea Tintei (m)</th>
+                            <th>Latimea Tintei (m)</th>
+                            <th>Inaltimea Tintei (m)</th>
+                            <th>Raza de Siguranta (m)</th>
+                            <th>Timpul de Tragere (s)</th>
+                            <th>Probabilitatea Dorita</th>
+                            <th>Viteza de Redresare (m/s)</th>
+                            <th>Viteza de Intrare in Picaj (m/s)</th>
+                            <th>Numarul de Tinte</th>
+                            <th>Numarul de avioane</th>
+                            <th class="result-cell">Probabilitatea de Nimicire</th>
+                            <th class="result-cell">Nr. min. de Avioane pt. prob. Garantata</th>
+                            <th class="result-cell">Nr. Mediu de Tinte Nimicite</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-rows">
+                        <!-- Results appear here -->
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </section>
+        
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
