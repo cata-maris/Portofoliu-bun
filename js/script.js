@@ -50,7 +50,7 @@ const swiper = new Swiper(".slider-wrapper", {
 });
 const cardItem = document.querySelector(".card-item");
 cardItem.addEventListener("click", function () {
-  window.open("detalii.html", "_blank");
+  window.open("proiecte.html", "_blank");
 });
 
 // pentru loader
@@ -61,7 +61,7 @@ function showPage() {
 }
 
 function loaderTimeout() {
-  setTimeout(showPage, 2000);
+  setTimeout(showPage, 1700);
 }
 
 window.addEventListener("load", loaderTimeout);
