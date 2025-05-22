@@ -29,14 +29,17 @@ body {
   z-index: 99999999999;
   transform: translateY(0);
   transition: all ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #loader {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 90px;
-  height: 90px;
-  margin: -76px 0 0 -76px;
+  /* left: 50%;
+  top: 50%; */
+  width: 120px;
+  height: 120px;
+  /* transform: translate(-50%, -50%); */
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid var(--btn-color);

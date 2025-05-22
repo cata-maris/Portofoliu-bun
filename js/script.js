@@ -61,7 +61,7 @@ function showPage() {
 }
 
 function loaderTimeout() {
-  setTimeout(showPage, 1700);
+  // setTimeout(showPage, 1700);
 }
 
 window.addEventListener("load", loaderTimeout);
