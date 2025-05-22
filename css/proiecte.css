@@ -196,11 +196,43 @@
     gap: 20px;
   }
 } */
+@media (max-width: 1200px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-box-text h2 {
+    font-size: 1.2rem;
+  }
+  .projects-box-text h4 {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  .projects-box-text p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin-top: 1rem;
+  }
+}
 @media (max-width: 700px) {
   .projects-container {
     grid-template-columns: 1fr;
   }
   .despre-welcome-box {
-    font-size: 1.6rem;
+    font-size: 2.8rem;
+  }
+  .projects-box {
+    padding: 20px;
+  }
+  #projects {
+    padding: 70px 10px;
+  }
+  .projects-box-text h4 {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .projects-box-text {
+    padding: 15px;
+    gap: 0.5rem;
   }
 }
