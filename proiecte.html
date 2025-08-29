@@ -4,18 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mrs Portofolio | Proiecte WEB</title>
-    <link rel=" icon" href="/images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png" />
+    <link rel="icon" href="/logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/proiecte.css">
+  
+  <style>
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --btn-color: #ff5733;
+  --dark-color: #020518;
+  --light-color: #f4f4f4;
+  --primary-color: #08c0dd;
+  --secondary-color: #262431;
+  --tertiary-color: #2f2c3d;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  overflow-x: hidden;
+  font-display: swap;
+}
+/* LOADING BTN */
+.loader-box {
+  width: 100%;
+  background: #111;
+  height: 100%;
+  position: fixed;
+  z-index: 99999999999;
+  transform: translateY(0);
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loader {
+  position: absolute;
+  /* left: 50%;
+  top: 50%; */
+  width: 120px;
+  height: 120px;
+  /* transform: translate(-50%, -50%); */
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid var(--btn-color);
+  animation: spin 2s linear infinite;
+  opacity: 0.8;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
   </head>
   <body>
     <div class="loader-box">
@@ -277,5 +332,9 @@ document.addEventListener("click", function (e) {
 
 
     </script>
+    <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/proiecte.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   </body>
 </html>

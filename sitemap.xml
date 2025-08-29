@@ -4,10 +4,12 @@
       <loc>https://mrs-webstudio.com/</loc>
       <lastmod>2025-08-28</lastmod>
       <priority>1.0</priority>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://mrs-webstudio.com/proiecte</loc>
       <lastmod>2025-08-28</lastmod>
       <priority>0.8</priority>
+      <changefreq>daily</changefreq>
    </url>
 </urlset>
