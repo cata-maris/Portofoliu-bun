@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Realizarea și dezvoltarea de site-uri web, proiecte web pentru lucrări școlare/academice, atestate profesionale la informatică și lecții pentru înțelegerea TIC, HTML și CSS | tot ce ai nevoie pentru a învăța și crea proiecte web.”">
-    <title>Mrs Portofolio | Website Design</title>
+    <title>Mrs Portofolio | Proiecte Web</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel=" icon" href="/images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,13 +24,13 @@
     </div>
     <nav class="navbar">
     
-      <a class="logo scroll" href=""><img src="./images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png">MRS WEB STUDIO</a>
+      <a class="logo scroll" href=""><img loading="lazy" src="./images/logo.webp" alt="logo">MRS WEB STUDIO</a>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#landing-about">Despre noi</a></li>
-        <li><a href="#landing-info">Servicii</a></li>
-        <li><a href="proiecte.html">Proiecte</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li onclick="hamburgerOnOff()"><a href="#top">Home</a></li>
+        <li onclick="hamburgerOnOff()"><a href="#landing-about">Despre noi</a></li>
+        <li onclick="hamburgerOnOff()"><a href="#landing-info">Servicii</a></li>
+        <li onclick="hamburgerOnOff()"><a href="proiecte.html">Proiecte</a></li>
+        <li onclick="hamburgerOnOff()"><a href="#contact">Contact</a></li>
 
         <div class="social">
 
@@ -49,21 +49,21 @@
     <section id="welcome">
       <div class="welcome-box">
         <div class="welcome-text">
-          <h1>ALEGE PROPRIUL DESIGN</h1>
+          <h1>ALEGE IDEEA DE PROIECT</h1>
           <p>IAR NOI TE AJUTĂM SĂ ÎL CREEZI</p>
           <div class="welcome-links">
             <a class="basic-btn" href="detalii.html">Atestate</a>
-            <a class="basic-btn" href="contact.html">Servicii</a>
+            <a class="basic-btn" href="contact.html">Proiecte</a>
           </div>
         </div>
-        <img src="./images/welcome-image.png" loading="lazy" >
+        <img src="./images/welcome-image.webp" loading="lazy" >
       </div>
     </section>
 
     <section id="landing-about">
       <div class="landing-about-text">
         <h1>DESPRE NOI</h1>
-        <p>  Salut! Numele meu este Maris Cătălin și sunt pasionat de tot ce înseamnă web. De peste 5 ani creez site-uri personalizate, proiecte unice și ofer consultanță specializată pentru realizarea diferitor proiecte de folos in mediul scolar/academic. <br> <br> Mă ocup de fiecare detaliu – de la idee la implementare – și livrez soluții complet custom, adaptate nevoilor fiecărui client. Pun accent pe simplitate, funcționalitate și design modern, iar fiecare proiect este pentru mine o nouă provocare creativă.</p>
+        <p>  Salut! Numele meu este Maris Cătălin și sunt pasionat de tot ce înseamnă web. De peste 5 ani creez site-uri personalizate, proiecte unice și ofer consultanță pentru realizarea diferitor proiecte de folos in mediul scolar/academic (atestate informatică, proiecte pentru lucrări de licență, master) <br> <br> Mă ocup de fiecare detaliu – de la idee la implementare – și livrez soluții complet custom, adaptate nevoilor fiecărui client. Pun accent pe simplitate, funcționalitate și design modern, iar fiecare proiect este pentru mine o nouă provocare creativă.</p>
         <a class="basic-btn" href="proiecte.html">Vezi proiectele noastre</a>
       </div>
       <div class="landing-about-image">
@@ -98,7 +98,7 @@
         <div class="landing-info-intro">
           <h3>SERVICIILE NOASTRE</h3>
           <h1>CU CE NE OCUPĂM?</h1>
-          <p>Oferim servicii de prelucrare, dezvoltare și generare de pagini web customizate și realizăm proiecte în domeniul web.  </p>
+          <p>Oferim servicii de editare, dezvoltare și creare de pagini web customizate și realizăm proiecte în domeniul web.  </p>
           <a class="basic-btn" href="proiecte.html">Descoperă mai mult</a>
         </div>
         <div class="landing-info-text">
@@ -109,8 +109,8 @@
         </div>
         <div class="landing-info-box">
           <i class="fa-solid fa-inbox"></i>
-          <h3>Atestate profesionale</h3>
-          <p>Vă putem oferi consultanță și va punem la dispoziție o gamă de proiecte în vederea obținerii atestatuui profesional la informatică. </p>
+          <h3>Atestate la informatică </h3>
+          <p>Vă putem oferi consultanță și va punem la dispoziție o gamă de proiecte în vederea obținerii atestatuui profesional la informatică (clasa a XII-a) </p>
         </div>
         <div class="landing-info-box">
           <i class="fa-regular fa-window-restore"></i>
@@ -119,8 +119,8 @@
         </div>
         <div class="landing-info-box">
           <i class="fa-solid fa-handshake"></i>
-          <h3>Consultanță în domeniul WEB</h3>
-          <p>Oferim consultanță și susținere pentru a va iniția în domeniul WEB și pentru a invăța să va creați propriul site web, fără aplicații intermediare.</p>
+          <h3>Meditații în domeniul WEB</h3>
+          <p>Oferim cursuri și susținere pentru a va familiariza copilul cu domeniul web și pentru a-l invăța să creeze propriul site web, utilizând și instrumente de editare foto/ scriere cod</p>
         </div>
       </div>
     </div>
@@ -130,28 +130,28 @@
       <div class="card-list swiper-wrapper">
 
       <div class="card-item swiper-slide">
-        <img src="/images/gallery1.JPG" alt="Proiect Imobiliar">
+        <img src="/images/gallery1.webp" alt="Proiect Imobiliar" loading="lazy" >
        <h3>Site-uri de promovare</h3>
       </div>
        <div class="card-item swiper-slide">
-        <img src="/images/gallery4.JPG" alt="Design Magazin Online">
+        <img src="/images/gallery4.webp" alt="Design Magazin Online" loading="lazy" >
         <h3 class="overlay">Atestate profesionale la informatică</h3>
       </div>
       <div class="card-item swiper-slide">
-        <img src="/images/gallery2.JPG" alt="Portofoliu Foto">
+        <img src="/images/gallery2.webp" alt="Portofoliu Foto" loading="lazy" >
         <h3 class="overlay">Aplicații web</h3>
       </div>
       <div class="card-item swiper-slide">
-        <img src="/images/gallery3.png" alt="Rezervare Restaurant">
+        <img src="/images/gallery3.png" alt="Rezervare Restaurant" loading="lazy" >
         <h3 class="overlay">Design-uri compatibile cu orice device</h3>
       </div>
      
       <div class="card-item swiper-slide">
-        <img src="/images/gallery5.JPG" alt="Landing Page Aplicatie">
+        <img src="/images/gallery5.webp" alt="Landing Page Aplicatie" loading="lazy" >
         <h3 class="overlay">Editare și colaje foto</h3>
       </div>
       <div class="card-item swiper-slide">
-        <img src="/images/gallery6.JPG" alt="Blog Personal">
+        <img src="/images/gallery6.webp" alt="Blog Personal" loading="lazy" >
         <h3 class="overlay">Formulare active și interactive</h3>
       </div>
        </div>
@@ -195,7 +195,7 @@
 
    <section id="footer-section">
     <div class="social-media">
-      <a class="logo" href=""><img src="./images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png">MRS WEB STUDIO</a>
+      <a class="logo" href=""><img loading="lazy" src="./images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png">MRS WEB STUDIO</a>
       <div class="social-icons">
        <a href=""> <i class="fa-brands fa-facebook"></i></a>
        <a href=""> <i class="fa-brands fa-square-instagram"></i></a>
