@@ -6,7 +6,7 @@
     <meta name="description" content="Realizarea și dezvoltarea de site-uri web, proiecte web pentru lucrări școlare/academice, atestate profesionale la informatică și lecții pentru înțelegerea TIC, HTML și CSS | tot ce ai nevoie pentru a învăța și crea proiecte web.”">
     <title>Mrs Portofolio | Proiecte Web</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel=" icon" href="/images/393723f9-11fa-40ca-ab26-caa4a682c389_removalai_preview.png" />
+    <link rel="icon" href="/logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -98,7 +98,7 @@
         <div class="landing-info-intro">
           <h3>SERVICIILE NOASTRE</h3>
           <h1>CU CE NE OCUPĂM?</h1>
-          <p>Oferim servicii de editare, dezvoltare și creare de pagini web customizate și realizăm proiecte în domeniul web.  </p>
+          <p>Oferim servicii de dezvoltare, editare și actualizare de pagini/site-uri web, precum și diverse proiecte/aplicații în domeniul WEB.  </p>
           <a class="basic-btn" href="proiecte.html">Descoperă mai mult</a>
         </div>
         <div class="landing-info-text">
@@ -165,13 +165,14 @@
     <h2><i class="fa-solid fa-envelope"></i> Contactează-ne </h2>
     <h4>Completează formularul de mai jos și intră în legătură cu echipa noastră. </h4>
     <form name="contact-form" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact-form" />
       <div class="form-grup">
-        <label for="name">Nume</label>
-        <input type="text" name="name" id="name" placeholder="Introduceți numele">
+        <label for="last_name">Nume</label>
+        <input type="text" name="last_name" id="last_name" placeholder="Introduceți numele">
       </div>
       <div class="form-grup">
-        <label for="name">Prenume</label>
-        <input type="text" name="name" id="name" placeholder="Introduceți prenumele">
+        <label for="first_name">Prenume</label>
+        <input type="text" name="first_name" id="first_name" placeholder="Introduceți prenumele">
       </div>
        <div class="form-grup">
          <label for="email">Email</label>
@@ -183,7 +184,7 @@
        </div>
        <div class="form-grup">
         <label for="message">Mesajul tău</label>
-        <textarea id="message" name="message" rows="5">
+        <textarea id="message" name="message" rows="5" placeholder="Mesajul tau aici">
 </textarea>
        </div>
          <input class="basic-btn" type="submit" value="Trimite" class="btn-submit">
