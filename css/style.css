@@ -707,7 +707,7 @@ form .basic-btn {
     width: 100%;
   }
 }
-@media (max-width: 966px) and (min-width: 715px) {
+@media (max-width: 966px) and (min-width: 756px) {
   .navbar {
     flex-direction: column;
     justify-content: center;
@@ -860,10 +860,11 @@ form .basic-btn {
     gap: 2.4rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(5px);
     margin-top: -1rem;
   }
+
   .social {
     flex-direction: column;
     margin: 0;
