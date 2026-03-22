@@ -12,10 +12,11 @@
      <link rel="stylesheet" href="./css/style.css" />
        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 
 
   </head>
@@ -49,22 +50,26 @@
     </nav>
 
     <section id="welcome">
+      <video id="hero-video" autoplay muted loop playsinline>
+  <source src="/images/hero-video2.mp4" type="video/mp4">
+</video>
+
+<canvas id="spotlight-canvas" ></canvas>
       <div class="welcome-box">
         <div class="welcome-text">
-          <h1>SITE-URI SI PROIECTE MODERNE</h1>
-          <p>Soluții web adaptate nevoilor tale</p>
+          <h1>CREARE SITE-URI WEB MODERNE</h1>
+          <p id="hero-sub">Soluții web pentru promovarea afacerii tale</p>
           <div class="welcome-links">
-            <a class="basic-btn" href="proiecte.html">Atestate</a>
-            <a class="basic-btn" href="proiecte.html">Proiecte</a>
+            <a class="basic-btn" href="proiecte.html">Site-uri web</a>
+            <a class="basic-btn" href="proiecte.html">Atestate informatică</a>
           </div>
         </div>
-        <img src="./images/welcome-image.webp" loading="lazy" >
       </div>
     </section>
 
     <section id="landing-about">
       <div class="landing-about-text">
-        <h1>DESPRE NOI</h1>
+        <h2>DESPRE NOI</h2>
         <p>  Salut! Numele meu este Maris Cătălin și sunt pasionat de tot ce înseamnă web. De peste 5 ani creez site-uri personalizate, proiecte unice și va pot îndruma în realizarea diferitor proiecte de folos in mediul scolar/academic (atestate informatică, proiecte pentru lucrări de licență, master) <br> <br> Mă ocup de fiecare detaliu – de la idee la implementare – și livrez soluții complet custom, adaptate nevoilor fiecărui client. Pun accent pe simplitate, funcționalitate și design modern, iar fiecare proiect este pentru mine o nouă provocare creativă.</p>
         <a class="basic-btn" href="proiecte.html">Vezi proiectele noastre</a>
       </div>
@@ -331,7 +336,7 @@
   </div>
 </section>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script>
-       <script src="./js/script.js?v=2" ></script>
+       <script defer src="./js/script.js?v=2" ></script>
  <script
       src="https://kit.fontawesome.com/21cc80cb87.js"
       crossorigin="anonymous"

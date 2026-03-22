@@ -63,7 +63,7 @@ function showPage() {
 }
 
 function loaderTimeout() {
-  setTimeout(showPage, 1700);
+  setTimeout(showPage, 600);
 }
 
 window.addEventListener("load", loaderTimeout);
@@ -128,4 +128,127 @@ document.addEventListener("click", function (e) {
       window.open(link, "_blank"); // Deschide linkul în tab nou
     }
   }
+});
+
+// pricing box activation when clicking
+const pricingBoxes = document.querySelectorAll(".pricing-box");
+
+pricingBoxes.forEach((element) => {
+  element.addEventListener("click", (e) => {
+    e.stopPropagation();
+    //necesar pentru a putea folosi listener pe document pentru a evita
+    pricingBoxes.forEach((box) => {
+      box.classList.remove("pricing-box-active");
+    });
+    element.classList.add("pricing-box-active");
+  });
+});
+document.addEventListener("click", () => {
+  pricingBoxes.forEach((box) => {
+    box.classList.remove("pricing-box-active");
+  });
+});
+
+// animatie pe hero
+const welcome = document.getElementById("welcome");
+const canvas = document.getElementById("spotlight-canvas");
+const ctx = canvas.getContext("2d");
+let W, H;
+
+/* dimensioneaza canvas-ul la marimea sectiunii */
+function resize() {
+  W = canvas.width = welcome.offsetWidth;
+  H = canvas.height = welcome.offsetHeight;
+}
+resize();
+window.addEventListener("resize", resize);
+
+let tx = W / 2;
+let ty = H / 2;
+let cx = W / 2;
+let cy = H / 2;
+let active = false;
+
+const RADIUS = 250; /* marimea cercului de lumina */
+const DARK = 0.85; /* cat de intunecat e restul — 0=transparent, 1=negru total */
+
+/* ── MOUSE ── */
+welcome.addEventListener("mousemove", (e) => {
+  const r = welcome.getBoundingClientRect();
+  tx = e.clientX - r.left;
+  ty = e.clientY - r.top;
+  active = true;
+});
+welcome.addEventListener("mouseleave", () => {
+  active = false;
+});
+
+/* ── TOUCH (mobil) ── */
+welcome.addEventListener(
+  "touchmove",
+  (e) => {
+    e.preventDefault();
+    const r = welcome.getBoundingClientRect();
+    tx = e.touches[0].clientX - r.left;
+    ty = e.touches[0].clientY - r.top;
+    active = true;
+  },
+  { passive: false },
+);
+
+welcome.addEventListener("touchend", () => {
+  setTimeout(() => {
+    active = false;
+  }, 700);
+});
+
+/* ── LOOP ── */
+(function draw() {
+  requestAnimationFrame(draw);
+
+  /* lerp smooth — cursorul e urmarit fluid */
+  cx += (tx - cx) * 0.08;
+  cy += (ty - cy) * 0.08;
+
+  ctx.clearRect(0, 0, W, H);
+
+  /* strat dark peste tot */
+  ctx.fillStyle = `rgba(6, 6, 6, ${DARK})`;
+  ctx.fillRect(0, 0, W, H);
+
+  if (active) {
+    /* taie o gaura luminoasa unde e cursorul */
+    ctx.globalCompositeOperation = "destination-out";
+    const hole = ctx.createRadialGradient(cx, cy, 0, cx, cy, RADIUS);
+    hole.addColorStop(0, "rgba(0, 0, 0, 1)");
+    hole.addColorStop(0.45, "rgba(0, 0, 0, 0.8)");
+    hole.addColorStop(1, "rgba(0, 0, 0, 0)");
+    ctx.fillStyle = hole;
+    ctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = "source-over";
+
+    /* nuanta portocalie neon in zona luminoasa */
+    const glow = ctx.createRadialGradient(cx, cy, 0, cx, cy, RADIUS);
+    glow.addColorStop(0, "rgba(216, 90, 48, 0.18)");
+    glow.addColorStop(0.5, "rgba(216, 90, 48, 0.07)");
+    glow.addColorStop(1, "rgba(216, 90, 48, 0)");
+    ctx.fillStyle = glow;
+    ctx.fillRect(0, 0, W, H);
+
+    /* inel portocaliu la marginea cercului */
+    ctx.beginPath();
+    ctx.arc(cx, cy, RADIUS * 0.88, 0, Math.PI * 2);
+    ctx.strokeStyle = "rgba(216, 90, 48, 0.25)";
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+})();
+// animatii hero
+gsap.from(["#welcome h1", "#welcome p", ".welcome-links"], {
+  opacity: 0,
+  delay: 1,
+  y: 24,
+  duration: 0.7,
+  stagger: 0.18, // delay între fiecare element
+  ease: "power3.out",
 });

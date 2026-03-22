@@ -17,9 +17,15 @@ html {
   --tertiary-color: #2f2c3d;
 }
 body {
-  font-family: "montserrat", sans-serif;
   overflow-x: hidden;
   font-display: swap;
+  font-family: "Mulish", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.01em;
 }
 /* LOADING BTN */
 .loader-box {
@@ -106,6 +112,23 @@ body {
   opacity: 0.5;
   transition: all ease-in-out 0.3s;
   font-size: 1.3rem;
+  position: relative;
+}
+.navbar ul li a::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--light-color);
+  transform-origin: left; /* ← cheia */
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+}
+
+.navbar ul li a:hover::after {
+  transform: scaleX(1);
 }
 .navbar ul li a:hover {
   opacity: 1;
@@ -194,36 +217,56 @@ nav img {
 
 #welcome {
   height: 110vh;
-  background:
-    linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(51, 51, 51, 0.4)),
-    url("/images/5184015.jpg");
+  overflow: hidden;
+  position: relative;
   background-size: cover;
   background-position: center;
   color: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #000;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 34, 34, 1) 100%
+  );
 }
-#welcome img {
-  width: 750px;
-  height: 100%;
-}
+
 .welcome-box {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
   width: 75%;
-  margin: auto;
 }
+#hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+#spotlight-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .welcome-text {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  text-align: end;
+  align-items: center;
+  text-align: center;
   gap: 2rem;
 }
 #welcome h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 #welcome p {
   font-size: 1.3rem;
@@ -268,7 +311,7 @@ nav img {
   color: #d4d4d4;
   font-size: 1.1rem;
 }
-.landing-about-text h1 {
+.landing-about-text h2 {
   font-size: 1.6rem;
 }
 
@@ -996,9 +1039,6 @@ form .basic-btn {
     margin-top: 10px;
   }
 
-  #welcome img {
-    width: 100%;
-  }
   .welcome-text {
     text-align: center;
     gap: 1rem;
@@ -1345,9 +1385,6 @@ form .basic-btn {
   }
 }
 @media (min-width: 1700px) {
-  #welcome img {
-    width: 90%;
-  }
   #welcome h1 {
     font-size: 4rem;
   }
@@ -1370,7 +1407,7 @@ form .basic-btn {
   .landing-about-text a {
     font-size: 1.5rem;
   }
-  .landing-about-text h1 {
+  .landing-about-text h2 {
     font-size: 2rem;
   }
   .landing-info-intro h1 {
