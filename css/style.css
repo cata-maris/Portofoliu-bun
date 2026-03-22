@@ -972,17 +972,17 @@ form .basic-btn {
     flex: 2;
   }
   #welcome h1 {
-    font-size: 2.3rem;
+    font-size: 3.4rem;
   }
   #welcome p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: var(--btn-color);
   }
   #welcome a {
     margin-right: 0.3rem;
   }
   .welcome-box {
-    width: 90%;
+    width: 80%;
   }
   .welcome-text {
     flex: 1;
@@ -1004,6 +1004,10 @@ form .basic-btn {
     flex-direction: column;
     justify-content: center;
     padding-top: 30px;
+  }
+  .welcome-box {
+    width: 90%;
+    margin-top: 5rem;
   }
 }
 @media (max-width: 966px) {
@@ -1185,6 +1189,9 @@ form .basic-btn {
   #welcome {
     height: 100vh;
   }
+  .welcome-box {
+    margin-top: 8rem;
+  }
 
   .card-list .card-item {
     padding: 10px 20px 10px 20px;
@@ -1250,7 +1257,7 @@ form .basic-btn {
 }
 @media (max-width: 550px) {
   #welcome h1 {
-    font-size: 1.5rem;
+    font-size: 2.7rem;
   }
   #welcome p {
     font-size: 1.1rem;
@@ -1375,7 +1382,21 @@ form .basic-btn {
   .contact-form h4 {
     font-size: 1.2rem;
   }
+  .welcome-box {
+    margin-top: 9rem;
+  }
 }
+@media (max-width: 383px) {
+  .welcome-box h1 {
+    font-size: 2rem;
+  }
+  .welcome-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .slider-wrapper {
     margin: 0 10px 40px;

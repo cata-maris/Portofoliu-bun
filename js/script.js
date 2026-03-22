@@ -170,7 +170,7 @@ let cy = H / 2;
 let active = false;
 
 const RADIUS = 250; /* marimea cercului de lumina */
-const DARK = 0.85; /* cat de intunecat e restul — 0=transparent, 1=negru total */
+const DARK = 0.75; /* cat de intunecat e restul — 0=transparent, 1=negru total */
 
 /* ── MOUSE ── */
 welcome.addEventListener("mousemove", (e) => {
@@ -187,13 +187,12 @@ welcome.addEventListener("mouseleave", () => {
 welcome.addEventListener(
   "touchmove",
   (e) => {
-    e.preventDefault();
     const r = welcome.getBoundingClientRect();
     tx = e.touches[0].clientX - r.left;
     ty = e.touches[0].clientY - r.top;
     active = true;
   },
-  { passive: false },
+  { passive: active },
 );
 
 welcome.addEventListener("touchend", () => {
