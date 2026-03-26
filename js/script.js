@@ -170,7 +170,7 @@ let cy = H / 2;
 let active = false;
 
 const RADIUS = 250; /* marimea cercului de lumina */
-const DARK = 0.75; /* cat de intunecat e restul — 0=transparent, 1=negru total */
+const DARK = 0.6; /* cat de intunecat e restul — 0=transparent, 1=negru total */
 
 /* ── MOUSE ── */
 welcome.addEventListener("mousemove", (e) => {
@@ -228,7 +228,7 @@ welcome.addEventListener("touchend", () => {
 
     /* nuanta portocalie neon in zona luminoasa */
     const glow = ctx.createRadialGradient(cx, cy, 0, cx, cy, RADIUS);
-    glow.addColorStop(0, "rgba(216, 90, 48, 0.18)");
+    glow.addColorStop(0, "rgba(216, 90, 48, 0.2)");
     glow.addColorStop(0.5, "rgba(216, 90, 48, 0.07)");
     glow.addColorStop(1, "rgba(216, 90, 48, 0)");
     ctx.fillStyle = glow;
@@ -237,7 +237,7 @@ welcome.addEventListener("touchend", () => {
     /* inel portocaliu la marginea cercului */
     ctx.beginPath();
     ctx.arc(cx, cy, RADIUS * 0.88, 0, Math.PI * 2);
-    ctx.strokeStyle = "rgba(216, 90, 48, 0.25)";
+    ctx.strokeStyle = "rgba(216, 90, 48, 0.4)";
     ctx.lineWidth = 1;
     ctx.stroke();
   }
@@ -250,4 +250,14 @@ gsap.from(["#welcome h1", "#welcome p", ".welcome-links"], {
   duration: 0.7,
   stagger: 0.18, // delay între fiecare element
   ease: "power3.out",
+});
+// de test!
+
+window.addEventListener("scroll", () => {
+  const track = document.querySelector(".marquee-track");
+  const scrollPosition = window.pageYOffset;
+
+  // Această linie face ca galeria să se miște ușor în funcție de scroll-ul paginii
+  // fără să oprească loop-ul infinit.
+  track.style.marginLeft = `-${scrollPosition * 0.2}px`;
 });
