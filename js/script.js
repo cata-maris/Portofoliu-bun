@@ -70,54 +70,6 @@ window.addEventListener("load", loaderTimeout);
 
 console.log("Scriptul a fost încărcat!");
 
-// effect de scroll
-
-window.addEventListener("scroll", () => {
-  const section = document.getElementById("experience");
-  const indicator = document.querySelector(".scroll-bar");
-
-  const sectionTop = section.offsetTop;
-  const sectionHeight = section.offsetHeight;
-  const scrollY = window.scrollY;
-
-  // Dacă suntem în interiorul secțiunii
-  if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
-    const scrolledInSection = scrollY - sectionTop;
-
-    const scrollProgress = (scrolledInSection / sectionHeight) * 100 + 20;
-    let scrollProgressFinal = 0;
-    if (scrollProgress <= 80) {
-      scrollProgressFinal = scrollProgress;
-    } else {
-      scrollProgressFinal = 100;
-    }
-    indicator.style.height = scrollProgressFinal + "%";
-  } else if (scrollY < sectionTop) {
-    // Dacă nu am ajuns încă la secțiune
-    indicator.style.height = "15%";
-  } else {
-    // Dacă am trecut de secțiune
-    indicator.style.height = "100%";
-  }
-});
-// Reveal on scroll
-const revealElements = document.querySelectorAll(".reveal");
-
-const revealOnScroll = () => {
-  const triggerBottom = window.innerHeight * 0.9;
-
-  revealElements.forEach((el) => {
-    const boxTop = el.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      el.classList.add("active");
-    }
-  });
-};
-
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
-
 // scripts for linking sites with cards
 
 document.addEventListener("click", function (e) {
@@ -170,7 +122,7 @@ let cy = H / 2;
 let active = false;
 
 const RADIUS = 250; /* marimea cercului de lumina */
-const DARK = 0.6; /* cat de intunecat e restul — 0=transparent, 1=negru total */
+const DARK = 0.58; /* cat de intunecat e restul — 0=transparent, 1=negru total */
 
 /* ── MOUSE ── */
 welcome.addEventListener("mousemove", (e) => {
@@ -242,16 +194,16 @@ welcome.addEventListener("touchend", () => {
     ctx.stroke();
   }
 })();
-// animatii hero
+
+// animatii hero de test
 gsap.from(["#welcome h1", "#welcome p", ".welcome-links"], {
   opacity: 0,
   delay: 1,
   y: 24,
   duration: 0.7,
-  stagger: 0.18, // delay între fiecare element
+  stagger: 0.18,
   ease: "power3.out",
 });
-// de test!
 
 window.addEventListener("scroll", () => {
   const track = document.querySelector(".marquee-track");
